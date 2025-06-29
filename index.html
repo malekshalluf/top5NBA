@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slideshow Home Page</title>
+  <meta name="keywords" content="NBA, basketball, top 10 NBA players, sports stats" />
+  <meta name="description" content="An interactive site showcasing my top 5 NBA players with highlights, stats, and fun features." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="slideshow-container">
+    <button class="nav-button prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="nav-button next" onclick="moveSlide(1)">&#10095;</button>
+
+    <div class="menu-wrapper">
+      <button id="menu-toggle">☰ Jump to Slide</button>
+      <div id="slide-menu" class="collapsed">
+        <ul>
+          <li onclick="goToSlide(0)">#1</li>
+          <li onclick="goToSlide(1)">#2</li>
+          <li onclick="goToSlide(2)">#3</li>
+          <li onclick="goToSlide(3)">#4</li>
+          <li onclick="goToSlide(4)">#5</li>
+          <li onclick="goToSlide(5)">HM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slides" id="slides">
+      
+      <div class="slide slide1">
+        <div class="top-left-number text-wrap">
+          <div class="text-layer text-shadow top-left-number">#1</div>
+          <div class="text-layer text-gold top-left-number">#1</div>
+        </div>
+
+        <div class="player-info">
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-name">BEN WALLACE</div>
+            <div class="text-layer text-gold player-name">BEN WALLACE</div>
+          </div>
+
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-nicknames">Big Ben, Body, Debo</div>
+            <div class="text-layer text-gold player-nicknames">Big Ben, Body, Debo</div>
+          </div>
+          
+          <button class="info-button" onclick="location.href='./PlayerProfiles/BenWallace.html'">See More Info</button>
+        </div>
+      </div>
+
+      <div class="slide slide2">
+        <div class="top-left-number text-wrap">
+          <div class="text-layer text-shadow top-left-number">#2</div>
+          <div class="text-layer text-gold top-left-number">#2</div>
+        </div>
+
+        <div class="player-info">
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-name">KEVIN GARNETT</div>
+            <div class="text-layer text-gold player-name">KEVIN GARNETT</div>
+          </div>
+
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-nicknames">KG, The Big Ticket, The Kid</div>
+            <div class="text-layer text-gold player-nicknames">KG, The Big Ticket, The Kid</div>
+          </div>
+          
+          <button class="info-button" onclick="location.href='./PlayerProfiles/KevinGarnett.html'">See More Info</button>
+        </div>
+      </div>
+      
+      <div class="slide slide3">
+        <div class="top-left-number text-wrap">
+          <div class="text-layer text-shadow top-left-number">#3</div>
+          <div class="text-layer text-gold top-left-number">#3</div>
+        </div>
+
+        <div class="player-info-br">
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-name">SCOTTIE BARNES</div>
+            <div class="text-layer text-gold player-name">SCOTTIE BARNES</div>
+          </div>
+
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-nicknames">SCOTTIER BARNEY, THE SPECTRUM</div>
+            <div class="text-layer text-gold player-nicknames">SCOTTIER BARNEY, THE SPECTRUM</div>
+          </div>
+          
+          <button class="info-button" onclick="location.href='./PlayerProfiles/ScottieBarnes.html'">See More Info</button>
+        </div>
+      </div>
+      
+      <div class="slide slide4">
+        <div class="top-left-number text-wrap">
+          <div class="text-layer text-shadow top-left-number">#4</div>
+          <div class="text-layer text-gold top-left-number">#4</div>
+        </div>
+
+        <div class="player-info-br">
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-name">KYRIE IRVING</div>
+            <div class="text-layer text-gold player-name">KYRIE IRVING</div>
+          </div>
+
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-nicknames">Uncle Drew, Ankletaker</div>
+            <div class="text-layer text-gold player-nicknames">Uncle Drew, Ankletaker</div>
+          </div>
+          
+          <button class="info-button" onclick="location.href='./PlayerProfiles/KyrieIrving.html'">See More Info</button>
+        </div>
+      </div>
+      
+      <div class="slide slide5">
+        <div class="top-left-number text-wrap">
+          <div class="text-layer text-shadow top-left-number">#5</div>
+          <div class="text-layer text-gold top-left-number">#5</div>
+        </div>
+
+        <div class="player-info-br">
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-name">Stephen Curry</div>
+            <div class="text-layer text-gold player-name">Stephen Curry</div>
+          </div>
+
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-nicknames">Baby-Faced Assassin, Chef Curry</div>
+            <div class="text-layer text-gold player-nicknames">Baby-Faced Assassin, Chef Curry</div>
+          </div>
+          
+          <button class="info-button" onclick="location.href='./PlayerProfiles/StephenCurry.html'">See More Info</button>
+        </div>
+      </div>
+      
+      <div class="slide slide6">
+        <div class="top-left-number text-wrap">
+          <div class="text-layer text-shadow top-left-number">HM</div>
+          <div class="text-layer text-gold top-left-number">HM</div>
+        </div>
+
+        <div class="player-info-br">
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-name">Kobe Bryant</div>
+            <div class="text-layer text-gold player-name">Kobe Bryant</div>
+          </div>
+
+          <div class="text-wrap">
+            <div class="text-layer text-shadow player-nicknames">Black Mamba, The 8th Wonder of the World</div>
+            <div class="text-layer text-gold player-nicknames">Black Mamba, The 8th Wonder of the World</div>
+          </div>
+          
+          <button class="info-button" onclick="location.href='./PlayerProfiles/KobeBryant.html'">See More Info</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
